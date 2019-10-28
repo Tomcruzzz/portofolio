@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+
+body, html {
+  height: 130%;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: #0f756f;}
+#Resume {background-color: #0f756f;}
+#Contact {background-color: #0f756f;}
+#Portfolio {background-color: #0f756f;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, '#0f756f')">Home</button>
+<button class="tablink" onclick="openPage('Resume', this, '#0f756f')" id="defaultOpen">Resume</button>
+<button class="tablink" onclick="openPage('Portfolio', this, '#0f756f')">Portfolio</button>
+<button class="tablink" onclick="openPage('Contact', this, '#0f756f')">Contact</button>
+
+
+<div id="Home" class="tabcontent">
+  <h2>Tom Antony</h2>
+<h6>TeamPlayer, Leader  Firefighter, Innovator, Problem solver.</h6>
+<h5>Since I am a fresher, I am still learning. But I can vouch for the fact that I am a fast learner. I am always open to learn,Hiring me can be a mutually beneficial arrangement for this company and me. I don't see why I cannot be hired for this internship. </h5>
+</div>
+
+<div id="Resume" class="tabcontent">
+ <h2>Tom Antony</h2>
+<h6>TeamPlayer, Leader  Firefighter, Innovator, Problem solver.</h6>
+
+<h3>EXPERIENCE</h3>
+<h4>Manipal Technologies Limited— Web Developer(intern)</h4>
+<h6>AUGUST 2019 - OCTOBER  2019</h6>
+<h5>Developing user interfaces, testing and debugging  within eCommerce technologies.
+Proven ability in optimizing web functionalities thatImprove data retrieval and workflow efficiencies
+Revamped, Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%
+</h5>
+<h4>Automatic Attendance Management System using Face Detection— Main Project</h4>
+<h5>A student Management system that uses face recognition to mark attendance of students in a class room and also an application for the management of staff in an educational institution integrated with the project
+</h5><h4>Staff Management — Mini Project</h4>
+<h5>A windows application for Management of staffs and students for an Educational Institution, using visual studio, C# programming language, SQL database.
+</h5>
+<h3>EDUCATION</h3>
+<h4>COLLEGE OF ENGINEERING KALLOOPPARA - B TECH</h4>
+<h6>AUGUST 2015 - MAY 2019</h6>
+<h5>COMPUTER SCIENCE ENGINEERING</h5>
+<h4>SH Public School, Kilimala — 12th</h4>
+<h6>MARCH 2015</h6>
+<h5>78% ( English, Physics, Chemistry,  Mathematics, Computer Science)</h5>
+<h4>SH Public School, Kilimala — 10th</h4>
+<h6>MARCH  2013</h6>
+<h4>78% ( Mathematics, Science, Social science, English, Malayalam)</h4>
+
+</div>
+<div id="Portfolio" class="tabcontent">
+<h3>SKILLS</h3>
+<h5>HTML programming</h5>
+<h5>CSS3 programming</h5>
+<h5>JavaScript programming</h5>
+<h5>C++ programming</h5>
+<h5>Java programming</h5>
+<h5>Python programming</h5>
+<h5>SQL </h5>
+<h5>Liquid programming</h5>
+<h3>AWARDS AND CERTIFICATES</h3>
+<h5>Google Cloud Platform certification.</h5>
+<h5>NSS volunteer of Kerala's best NSS group.</h5>
+<h5>Volunteer in Post flood relief work conducted by the District Administration of Pathanamthitta on August 2018
+Class Representative of cs batch for 4 years in college.
+</h5>
+
+</div>
+
+<div id="Contact" class="tabcontent">
+ 
+<h4>Puthenpurackal (H)</h4>
+<h4>Nalukody P.O. Changanacherry</h4>
+<h4>Kottayam, PIN : 686105</h4>
+<h4>tomantony1997@gmail.com </h4><h4>+91 8593815539</h4>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
